@@ -1,0 +1,17 @@
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\bin\Debug\NewsApi.exe.config
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\bin\Debug\NewsApi.exe
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\bin\Debug\NewsApi.pdb
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\bin\Debug\Newtonsoft.Json.dll
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\bin\Debug\StreamJsonRpc.dll
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\bin\Debug\Microsoft.VisualStudio.Validation.dll
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\bin\Debug\Newtonsoft.Json.xml
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\bin\Debug\Microsoft.VisualStudio.Validation.xml
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\obj\Debug\NewsApi.csprojAssemblyReference.cache
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\obj\Debug\NewsApi.NewsApi.resources
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\obj\Debug\NewsApi.Properties.Resources.resources
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\obj\Debug\NewsApi.csproj.GenerateResource.cache
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\obj\Debug\NewsApi.csproj.CoreCompileInputs.cache
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\obj\Debug\NewsApi.csproj.CopyComplete
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\obj\Debug\NewsApi.exe
+C:\Users\adorre\Documents\GitHub\FinalProject\WebServiceApp\NewsApi\obj\Debug\NewsApi.pdb
