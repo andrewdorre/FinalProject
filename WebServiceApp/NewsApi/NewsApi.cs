@@ -28,7 +28,7 @@ namespace NewsApi
             string jsonNews = await client.GetStringAsync(new Uri(
                 "https://newsapi.org/v2/top-headlines?country=us&apiKey=5cb35fea7dfd4098abd2498570bdcfb9"));
             dynamic stuff = JObject.Parse(jsonNews);
-            textBox1.AppendText(stuff);
+            textBox1.AppendText(stuff.ToString());
         }
     }
 }
