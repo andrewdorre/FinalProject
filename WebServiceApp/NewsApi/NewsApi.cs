@@ -25,10 +25,18 @@ namespace NewsApi
 
         private async void btnRefresh_Click(object sender, EventArgs e)
         {
+            dynamic jsonTest = JObject.Parse("{ 'Name': 'Jon Smith', 'Address': { 'City': 'New York', 'State': 'NY' }, 'Age': 42 }");
             string jsonNews = await client.GetStringAsync(new Uri(
                 "https://newsapi.org/v2/top-headlines?country=us&apiKey=5cb35fea7dfd4098abd2498570bdcfb9"));
             dynamic stuff = JObject.Parse(jsonNews);
-            textBox1.AppendText(stuff);
+
+            //textBox1.AppendText(stuff);
+            //string name = jsonTest.Name;
+            //string address = jsonTest.Address.City;
+            //textBox1.AppendText(name);
+            //textBox1.AppendText(address);
+            string article = stuff.articles[0].title;
+            textBox1.AppendText(article);
         }
     }
 }
