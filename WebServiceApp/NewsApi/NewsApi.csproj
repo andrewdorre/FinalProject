@@ -57,6 +57,7 @@
     <Compile Include="NewsApi.Designer.cs">
       <DependentUpon>NewsApi.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewsHeader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="NewsApi.resx">

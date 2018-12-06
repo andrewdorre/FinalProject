@@ -35,8 +35,23 @@ namespace NewsApi
             //string address = jsonTest.Address.City;
             //textBox1.AppendText(name);
             //textBox1.AppendText(address);
-            string article = stuff.articles[0].title;
-            textBox1.AppendText(article);
+
+            //NewsHeader testHeader = new NewsHeader();
+            //testHeader.NewsTitle = stuff.articles[0].title;
+            //testHeader.NewsDate = stuff.articles[0].publishedAt;
+            //testHeader.NewsSource = stuff.articles[0].source.name;
+            //testHeader.NewsLink = stuff.articles[0].url;
+            //string article = string.Format("Title: {0} Publish Date: {1} Source: {2} Link: ",testHeader.NewsTitle, testHeader.NewsDate, testHeader.NewsSource, testHeader.NewsLink);
+            //string article = stuff.articles[0].title;
+            //textBox1.AppendText(article);
+
+            // Was trying to find the number of articles using .Length at first, but that doesn't work
+            // Used .Count instead: https://stackoverflow.com/questions/19025174/get-length-of-array-json-net
+            for (int i = 0; i < (stuff.articles).Count; i++)
+            {
+                string article = stuff.articles[i].title;
+                textBox1.AppendText(article);
+            }
         }
     }
 }

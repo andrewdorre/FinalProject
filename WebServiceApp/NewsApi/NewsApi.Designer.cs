@@ -34,16 +34,16 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 13);
+            this.textBox1.Location = new System.Drawing.Point(678, 325);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(639, 395);
+            this.textBox1.Size = new System.Drawing.Size(239, 300);
             this.textBox1.TabIndex = 0;
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(295, 414);
+            this.btnRefresh.Location = new System.Drawing.Point(142, 602);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(75, 23);
             this.btnRefresh.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 442);
+            this.ClientSize = new System.Drawing.Size(929, 637);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.textBox1);
             this.Name = "NewsApi";
