@@ -8,6 +8,7 @@ namespace NewsApi
 {
     class NewsHeader
     {
+
         public string NewsTitle { get; set; }
         public string NewsSource { get; set; }
         public string NewsLink { get; set; }
