@@ -35,30 +35,65 @@ namespace NewsApi
             List<Label> labelTitle = new List<Label>();
             List<Label> labelDate = new List<Label>();
             List<Label> labelSource = new List<Label>();
+            List<dynamic> allControls = new List<dynamic>();
             //List<LinkClickedEventArgs> linkClicked = new List<LinkClickedEventArgs>();
 
+
+
+            foreach (Label lbl in panel1.Controls)
+            {
+                if (lbl is Label)
+                {
+                    allControls.Add(lbl);
+                }
+            }
+            // https://stackoverflow.com/questions/1536739/get-a-windows-forms-control-by-name-in-c-sharp 
+            while (allControls.Count > 0)
+            {
+                for (int n = 1; n < 11; n++)
+                {
+                    // Needed to add "ToList()" to the end of this
+                    // https://stackoverflow.com/questions/604831/collection-was-modified-enumeration-operation-may-not-execute
+                    foreach (Label lbl in allControls.ToList())
+                    {
+                        if (lbl.Name.StartsWith("linkLabel") && lbl.Name.EndsWith(n.ToString()))
+                        {
+                            labelTitle.Add(lbl);
+                            allControls.Remove(lbl);
+                        }
+                        if (lbl.Name.StartsWith("lblDate") && lbl.Name.EndsWith(n.ToString()))
+                        {
+                            labelDate.Add(lbl);
+                            allControls.Remove(lbl);
+                        }
+                        if (lbl.Name.StartsWith("lblSource") && lbl.Name.EndsWith(n.ToString()))
+                        {
+                            labelSource.Add(lbl);
+                            allControls.Remove(lbl);
+                        }
+                    }
+                }
+                
+            }
             //int n = 1;
             // Used bottom comment, although their syntax wasn't correct
             // https://stackoverflow.com/questions/37480105/how-can-i-add-several-labels-to-a-list-in-a-for-loop
             // Thinking I could group the labels by type... source, date, title
-            for (int n = 1; n < 11; n++)
+            
+            
+            
+            
+            /*foreach (Label lbl in panels)
             {
-                // https://stackoverflow.com/questions/1536739/get-a-windows-forms-control-by-name-in-c-sharp
-                string panel = "panel" + n.ToString();
-                var ctn = this.Controls.Find(panel, false).FirstOrDefault();
+                if (lbl.Name.StartsWith("linkLabel"))
+                    labelTitle.Add(lbl);
 
-                foreach (Label control in ctn.Controls)
-                {
-                    if (control.Name.StartsWith("linkLabel"))
-                        labelTitle.Add(control);
+                if (lbl.Name.StartsWith("lblDate"))
+                    labelDate.Add(lbl);
 
-                    if (control.Name.StartsWith("lblDate"))
-                        labelDate.Add(control);
-
-                    if (control.Name.StartsWith("lblSource"))
-                        labelSource.Add(control);
-                }
-            }           
+                if (lbl.Name.StartsWith("lblSource"))
+                    labelSource.Add(lbl);
+            }*/
             /*foreach (Label control in panel1.Controls)
             {
                 if (control.Name.StartsWith("linkLabel"))                
@@ -87,7 +122,7 @@ namespace NewsApi
                     labelSource.Add(control);
                 }
             }*/
-            
+
 
             // Was trying to find the number of articles using .Length at first, but that doesn't work
             // Used .Count instead: https://stackoverflow.com/questions/19025174/get-length-of-array-json-net
@@ -101,7 +136,7 @@ namespace NewsApi
                 newsList.Add(testHeader);
             }            
 
-            for (int i = 1; i < 11; i++)
+            for (int i = 0; i < 10; i++)
             {
                 labelTitle[i].Text = newsList[i].NewsTitle;
                 //labelURL[i] = newsList[i].NewsLink;
